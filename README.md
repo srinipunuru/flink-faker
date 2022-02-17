@@ -13,7 +13,8 @@ This project is inspired by [voluble](https://github.com/MichaelDrogalis/voluble
 ## Package
 
 ```shell script
-mvn clean package
+# Latest tests break with flink 1.13.2 build 
+mvn clean package -DskipTests
 ```
 
 ## Adding flink-faker to Flink SQL Client
